@@ -1,0 +1,38 @@
+{
+  "name": "portal-api-master",
+  "version": "1.0.0",
+  "description": "Seecows Portal API project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "lint": "eslint server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jigneshkmistry/SeecowsPortalAPI.git"
+  },
+  "author": "Jignesh K Mistry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jigneshkmistry/SeecowsPortalAPI/issues"
+  },
+  "homepage": "https://github.com/jigneshkmistry/SeecowsPortalAPI#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "nodemon": "^1.17.4"
+  },
+  "nodemonConfig":{
+    "restartable":"rs",
+    "ignore":["node_mpdules/**/node_modules"],
+    "delay": "2500" 
+  }
+}
