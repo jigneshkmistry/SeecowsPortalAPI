@@ -5,10 +5,12 @@ const morgan = require('morgan');
 
 app.use(morgan('tiny'));
 
+const port = process.env.PORT || 3000;
+
 app.get('/', (req, res) => {
-  res.send('Het there.');
+  res.send('Hey there!!!');
 });
 
-app.listen(3000, () => {
-  debug(`listening on port ${chalk.green('3000')}`);
+app.listen(port, () => {
+  debug(`listening on port ${chalk.green(port)}`);
 });
