@@ -1,0 +1,11 @@
+html
+    head
+        title My App
+    body(class=["MyClass"])
+        h1(id='MyID')= title
+        p
+            h3 Jignesh K Mistry
+        ul
+            each val in list
+                li
+                    a(href=val.link)= val.title

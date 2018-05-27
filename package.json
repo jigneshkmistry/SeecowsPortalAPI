@@ -22,7 +22,8 @@
     "chalk": "^2.4.1",
     "debug": "^3.1.0",
     "express": "^4.16.3",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
@@ -30,14 +31,16 @@
     "eslint-plugin-import": "^2.12.0",
     "nodemon": "^1.17.4"
   },
-  "nodemonConfig":{
-    "restartable":"rs",
-    "ignore":["node_mpdules/**/node_modules"],
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_mpdules/**/node_modules"
+    ],
     "delay": "2500",
-    "env":{
-      "NODE_ENV":"development",
-      "PORT":4000,
-      "DEBUG":"app"
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000,
+      "DEBUG": "app"
     }
   }
 }
