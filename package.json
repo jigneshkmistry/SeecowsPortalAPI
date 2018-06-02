@@ -23,6 +23,7 @@
     "debug": "^3.1.0",
     "express": "^4.16.3",
     "morgan": "^1.9.0",
+    "mssql": "^4.1.0",
     "pug": "^2.0.3"
   },
   "devDependencies": {
@@ -40,7 +41,7 @@
     "env": {
       "NODE_ENV": "development",
       "PORT": 4000,
-      "DEBUG": "app"
+      "DEBUG": "app*"
     }
   }
 }
